@@ -1,0 +1,828 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                         GRAFICAMENTE
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hola Mundo:
+
+package holamundo;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class HolaMundo {
+
+    
+    public static void main(String[] args) {
+        
+      JOptionPane.showMessageDialog(null,"Hola Mundo");  
+          
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aprovado/Reprovado
+
+package aprovado.reprovado;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class GraficaReproApro {
+     public static void main(String [] args){
+     String num1;
+     int Cantidad1; 
+     
+       num1 = JOptionPane.showInputDialog("Ingrese la nota");
+       Cantidad1=Integer.parseInt(num1);
+        if(Cantidad1>=7){
+            JOptionPane.showMessageDialog(null,"Aprobado");  
+        }else if (Cantidad1<7){
+           JOptionPane.showMessageDialog(null,"Reprobado");  
+       
+    }
+     }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Valor Inicial/ Valor Final:
+
+package valorinicialvalorfinal;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class ValorInicialValorFinal {
+    
+    public static void main(String[] args) {
+          String numero1;
+        String numero2;
+        String total;
+          
+        int enttrada;
+        int salida;
+        int resultado;
+        
+		 numero1 = JOptionPane.showInputDialog("Inicio de tu tabla");
+                 enttrada=Integer.parseInt(numero1);
+                
+                 numero2 = JOptionPane.showInputDialog("Fin de tu tabla tabla");
+                 salida=Integer.parseInt(numero2);
+		
+		for (int i=enttrada;i<=salida;i++){
+                 
+                    int f=1;
+                    for (i=enttrada;f<=10;f++){
+                     resultado=enttrada*f;
+		JOptionPane.showMessageDialog(null,enttrada +" x "+f+" = "+resultado);   
+                       
+                    }
+                    enttrada++;         
+		}  
+    }
+    
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usuario:
+
+package usuario;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class Usuario {
+
+   
+    public static void main(String[] args) {
+       String usuario="Fer",respuesta="";
+        
+        JOptionPane.showMessageDialog(null,"Por favor ingresam tu usuario");
+          respuesta = JOptionPane.showInputDialog(" contraseña");
+          if (respuesta.equals(usuario)){
+              JOptionPane.showMessageDialog(null," Bienvenido Usuario");
+      } else{ 
+         JOptionPane.showMessageDialog(null,"Error, Incorrecto");
+    }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iterando:
+
+package iterando;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class Iterando {
+
+    
+    public static void main(String[] args) {
+       int var=1;
+        
+        while (var<=100 ){
+           JOptionPane.showMessageDialog(null,"Iterando :" + var + " veces");
+            var++;
+        }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Numeros de 2 en 2 Con Ciclo For:
+
+package numeros.de.dos.en.dos;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class NumerosDeDosEnDos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+     for (int num=0;num<=100;num=num+2){
+         
+        JOptionPane.showMessageDialog(null,num);
+            
+        }
+    }
+    }
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suma,resta, de dos numeros:
+
+package sumaresta;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class SumaResta {
+
+    
+    public static void main(String[] args) {
+       String valor1;
+        String valor2;
+        
+        int numero1;
+        int numero2;
+  
+        
+        valor1 = JOptionPane.showInputDialog("Numero 1");
+                 numero1=Integer.parseInt(valor1);
+     
+        valor2 = JOptionPane.showInputDialog("Numero 2");
+                 numero2=Integer.parseInt(valor2);
+        
+        JOptionPane.showMessageDialog(null," La suma de los valores ingresados es   "   +(numero1+numero2)+"\n La resta es    "   +(numero1-numero2));
+
+    
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calificacion de Escala:
+
+package calificacionescala;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class CalificacionEscala {
+    
+    public static void main(String[] args) {
+        
+        String valor1;
+       String valor2;
+       String valor3;
+       String valor4;
+       String valor5;
+       String valor6;
+       String pro1;
+       String pro2;
+       String pro3;
+       String profinal;
+       
+       int l1;
+       int p1;
+       int l2;
+       int p2;
+       int l3;
+       int p3;
+       int promedio1;
+       int promedio2;
+       int promedio3;
+       
+       
+       
+       JOptionPane.showMessageDialog(null,"Bienvenidos Al Regisgtro de Notas ");
+       
+       JOptionPane.showMessageDialog(null,"Digite el la nota de el primer laboratorio");
+       valor1 = JOptionPane.showInputDialog("");
+                 l1=Integer.parseInt(valor1);
+       while (l1<0 || l1>10){
+           
+          
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota del el primer parcial");
+       valor2 = JOptionPane.showInputDialog("");
+                 p1=Integer.parseInt(valor2);
+       while (p1<0 || p1>10){
+           
+          
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el segundo laboratorio");
+       valor3 = JOptionPane.showInputDialog("");
+                 l2=Integer.parseInt(valor3);
+       while (l2<0 || l2>10){
+           
+         
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el segundoo parcial");
+       valor4 = JOptionPane.showInputDialog("");
+                 p2=Integer.parseInt(valor4);
+       while (p2<0 || p2>10){
+           
+           
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el tercer laboratorio");
+       valor5 = JOptionPane.showInputDialog("");
+                 l3=Integer.parseInt(valor5);
+       while (l3<0 || l3>10){
+           
+           
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el tercer parcial");
+       valor6 = JOptionPane.showInputDialog("");
+                 p3=Integer.parseInt(valor6);
+       while (p3<0 || p3>10){
+     
+      
+       }
+       
+       double prom1 = (l1*0.4)+(p1*0.6);
+       double prom2 = (l2*0.4)+(p2*0.6);
+       double prom3 = (l3*0.4)+(p3*0.6);
+         
+       double promfinal = (prom1+prom2+prom3)/3;
+       
+       
+       JOptionPane.showMessageDialog(null,"El promedio de la nota final es:  " + promfinal);
+       
+       if (promfinal>=7){
+           JOptionPane.showMessageDialog(null,"Su Estado es: APROBADO ");
+           
+       }
+       else {
+           JOptionPane.showMessageDialog(null,"Su Estado es: REPROBADO ");
+           
+       }
+   
+    }
+    
+} 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+De uno o dos cifras:
+
+package cifras;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class Cifras {
+
+    public static void main(String[] args) {
+        String valor;    
+    int numero;
+        
+        JOptionPane.showMessageDialog(null,"Ingresa tu numero");
+        valor = JOptionPane.showInputDialog("Introducir 1");
+                 numero=Integer.parseInt(valor);
+        
+        
+        if (numero>0&&numero<10){
+        JOptionPane.showMessageDialog(null,"Tu numero tiene UNA CIFRA"); 
+        }else if(numero>10&&numero<100){
+       JOptionPane.showMessageDialog(null,"Tu numero tiene DOS CIFRAS");     
+        }
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tablas de Multiplicar:
+
+package tabllasdemultiplicar;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class TabllasDeMultiplicar {
+
+    public static void main(String[] args) {
+       String numero1;
+        String numero2;
+        String total;
+        
+        int e;
+        int s;
+   
+        numero1 = JOptionPane.showInputDialog("Inicio de Tu tabla");
+                 e=Integer.parseInt(numero1);
+                
+        numero2 = JOptionPane.showInputDialog("Fin de Tu tabla");
+                 s=Integer.parseInt(numero2);
+        
+        int resul;
+    
+       
+       while (e<=s){
+           int f=1;
+           while (f<=10){
+               
+               resul=e*f;
+               
+               JOptionPane.showMessageDialog(null,e+ "x" +f+ "=" +resul );
+               
+               f++;   
+           }
+           e++;
+           JOptionPane.showMessageDialog(null,"");
+       }
+     
+    }
+    
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suma,resta,Division y Multiplicacion de dos numeros:
+
+package operadores;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class Operadores {
+
+  
+    public static void main(String[] args) {
+   
+        String valor1;
+        String valor2;
+        
+        int numero1;
+        int numero2;
+  
+        
+        valor1 = JOptionPane.showInputDialog("Introduzca 1");
+                 numero1=Integer.parseInt(valor1);
+     
+        valor2 = JOptionPane.showInputDialog("Introduzca 2");
+                 numero2=Integer.parseInt(valor2);
+        
+        JOptionPane.showMessageDialog(null,"LA SUMA DE LOS VALORES INGRESADOS ES: "+(numero1+numero2)+"\nLa resta es: " +(numero1-numero2+"\nLa division es: " +(numero1/numero2+"\nLa multiplicacion es: " +(numero1*numero2)))); 
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Zpateria:
+
+
+package zapateria;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class Zapateria {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+          String valor1;
+     String valor2;
+     String valor3;
+     
+     int compra;
+     int descuento;
+     int total;
+    
+    JOptionPane.showMessageDialog(null,"Bienvenidos");
+   
+    valor1 = JOptionPane.showInputDialog("Ingrese el precio de los zapatos");
+                 compra=Integer.parseInt(valor1);
+    if (compra>=150){
+        descuento=(int) (compra*0.20);
+        total=compra-descuento;
+        JOptionPane.showMessageDialog(null,"Por compras con un monto de 150 se le aplica un descuento de 20%");
+        JOptionPane.showMessageDialog(null,"Descuento: $"+descuento);
+        JOptionPane.showMessageDialog(null,"Total a pagar: $"+total);
+    } else{
+        JOptionPane.showMessageDialog(null,"Lo sentimos pero estos zapatos no aplican para el descuento");
+        JOptionPane.showMessageDialog(null,"Total a cancelar: $"+compra);
+    }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calculño de Salario:
+
+package calculo.de.salario;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class CalculoDeSalario {
+
+    public static void main(String[] args) {
+        String val1;
+       String val2;
+       String val3;
+       String val4;
+       String val5;
+       
+       int hora;
+       int n1;
+       int n2;
+       int n3 = 0;
+       int salario1;
+       int salario2;
+       
+       val1 = JOptionPane.showInputDialog("Horas Elaboradas");
+                 hora=Integer.parseInt(val1);
+       
+       if(hora<=40){
+          
+       salario1=(hora*10);
+         JOptionPane.showMessageDialog(null,"Su sueldo final es $ "+ salario1);
+       }
+       else 
+           if(hora>40){
+             n1=(hora-40);
+             n2=n3*20;
+             salario2=n2+(40*20);
+             
+               JOptionPane.showMessageDialog(null,"Su sueldo final sera de $ "+salario2  );
+           }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5 Notas ingresadas y calacularcual es mayor
+
+package notasmayores;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class NotasMayores {
+
+   
+    public static void main(String[] args) {
+String num1;
+        String num2;
+        String num3;
+        String num4;
+        String num5;
+        
+        int n1;
+        int n2;
+        int n3;
+        int n4;
+        int n5;
+      
+        JOptionPane.showMessageDialog(null,"Ingresa tus 5 notas");
+        num1 = JOptionPane.showInputDialog("Ingresa la Nota 1");
+                 n1=Integer.parseInt(num1);
+        num2 = JOptionPane.showInputDialog("Ingresa la Nota 2");
+                 n2=Integer.parseInt(num2);
+        num3 = JOptionPane.showInputDialog("Ingresa la Nota 3");
+                 n3=Integer.parseInt(num3);
+        num4 = JOptionPane.showInputDialog("Ingresa la Nota 4");
+                 n4=Integer.parseInt(num4);
+        num5 = JOptionPane.showInputDialog("Ingresa la Nota 5");
+                 n5=Integer.parseInt(num5);
+        if (n1>n2&&n1>n3&&n1>n4&&n1>n5){
+            JOptionPane.showMessageDialog(null,"la mayor nota es: "+n1);  
+        }else if (n2>n1&&n2>n3&&n2>n4&&n2>n5){
+            JOptionPane.showMessageDialog(null,"la mayor nota es: "+n2);
+        }else if (n3>n1&&n3>n2&&n3>n4&&n3>n5){
+            JOptionPane.showMessageDialog(null,"la mayor nota es: "+n3);
+        }else if (n4>n1&&n4>n2&&n4>n3&&n4>n5){
+           JOptionPane.showMessageDialog(null,"la mayor nota es: "+n4);
+        }else if (n5>n1&&n5>n2&&n5>n3&&n5>n4){
+            JOptionPane.showMessageDialog(null,"la mayor nota es: "+n5);
+        }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calcular el total de gastos
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class CalculoDeGastos {
+
+    public static void main(String[] args) {
+        String n1;
+    String n2;
+    String n3;
+    String n4;
+    String n5;
+    
+    int agua =50 ;
+    int luz = 20;
+    int hijos = 0;
+    int colegiatura = 55;
+    int total;
+    
+       
+        JOptionPane.showMessageDialog(null,"Lista de los gastos del Mes:");
+        JOptionPane.showMessageDialog(null,"Agua potable $50\nLuz electrica $20\nColegiatura $55 por cada hijo,Descuento del 50% si el padre de familia si tiene cinco hijos estudiando");
+        JOptionPane.showMessageDialog(null,"Ingrese la cantidad de hijos que asisten al colegio");
+         n3 = JOptionPane.showInputDialog("");
+                 hijos=Integer.parseInt(n3);
+        if (hijos>=5){
+            total=(int) ((colegiatura*0.5)*hijos);
+            JOptionPane.showMessageDialog(null,"Si aplica el descuento en colegiaturas (50%)");
+            JOptionPane.showMessageDialog(null,"total de colegiaturas: $"+total);
+            JOptionPane.showMessageDialog(null,"Total gastos del mes: $"+(total+agua+luz));
+        } else{
+            total=colegiatura*hijos;
+            JOptionPane.showMessageDialog(null,"NO aplica el descuento de colegiaturas");
+            JOptionPane.showMessageDialog(null,"Total de colegiaturas: $"+total);
+            JOptionPane.showMessageDialog(null,"Total gastos del mes: $"+(total+agua+luz));
+        }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+laboratorios y parciales, Aprovado, Reprovado
+
+package parciales.laboratorios;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class ParcialesLaboratorios {
+
+    public static void main(String[] args) {
+        String valor1;
+       String valor2;
+       String valor3;
+       String valor4;
+       String valor5;
+       String valor6;
+       String pro1;
+       String pro2;
+       String pro3;
+       String profinal;
+       
+       int l1;
+       int p1;
+       int l2;
+       int p2;
+       int l3;
+       int p3;
+       int promedio1;
+       int promedio2;
+       int promedio3;
+       
+       JOptionPane.showMessageDialog(null,"Bienvenidos Usuario");
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el primer laboratorio");
+       valor1 = JOptionPane.showInputDialog("");
+                 l1=Integer.parseInt(valor1);
+       while (l1<0 || l1>10){
+       
+       JOptionPane.showMessageDialog(null,"ERROR");
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar el primer laboratorio");
+               valor1 = JOptionPane.showInputDialog("");
+                 l1=Integer.parseInt(valor1);
+       l1=Integer.parseInt(valor1);
+       }    
+          
+       
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota del el primer parcial");
+       valor2 = JOptionPane.showInputDialog("");
+                 p1=Integer.parseInt(valor2);
+       while (p1<0 || p1>10){
+       
+        JOptionPane.showMessageDialog(null,"ERROR");   
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar el primer parcial");
+               valor2 = JOptionPane.showInputDialog("");
+                 p1=Integer.parseInt(valor2);
+       l1=Integer.parseInt(valor1);    
+          
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el segundo laboratorio");
+       valor3 = JOptionPane.showInputDialog("");
+                 l2=Integer.parseInt(valor3);
+       while (l2<0 || l2>10){
+       
+       JOptionPane.showMessageDialog(null,"ERROR");   
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar el segundo laboratorio");
+               valor3 = JOptionPane.showInputDialog("");
+                 l2=Integer.parseInt(valor1);
+       l2=Integer.parseInt(valor3);    
+           
+         
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el segundoo parcial");
+       valor4 = JOptionPane.showInputDialog("");
+                 p2=Integer.parseInt(valor4);
+       while (p2<0 || p2>10){
+         
+       JOptionPane.showMessageDialog(null,"ERROR");    
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar la segunda nota del parcial");
+               valor4 = JOptionPane.showInputDialog("");
+                 p2=Integer.parseInt(valor4);
+       p2=Integer.parseInt(valor1);    
+           
+           
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el tercer laboratorio");
+       valor5 = JOptionPane.showInputDialog("");
+                 l3=Integer.parseInt(valor5);
+       while (l3<0 || l3>10){
+           
+       JOptionPane.showMessageDialog(null,"ERROR");
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar el tercer laboratorio");
+               valor5 = JOptionPane.showInputDialog("");
+                 l3=Integer.parseInt(valor5);
+       l3=Integer.parseInt(valor5);    
+       }
+       
+       JOptionPane.showMessageDialog(null,"Digite la nota de el tercer parcial");
+       valor6 = JOptionPane.showInputDialog("");
+                 p3=Integer.parseInt(valor6);
+       while (p3<0 || p3>10){
+     
+       JOptionPane.showMessageDialog(null,"ERROR");    
+       JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+               JOptionPane.showMessageDialog(null,"Vuelva a digitar el primer laboratorio");
+               valor6 = JOptionPane.showInputDialog("");
+                 p3=Integer.parseInt(valor6);
+       p3=Integer.parseInt(valor6);    
+      
+       }
+       
+       double prom1 = (l1*0.4)+(p1*0.6);
+       double prom2 = (l2*0.4)+(p2*0.6);
+       double prom3 = (l3*0.4)+(p3*0.6);
+         
+       double promfinal = (prom1+prom2+prom3)/3;
+       
+       
+       JOptionPane.showMessageDialog(null,"El promedio de la nota final es:  " + promfinal);
+       
+       if (promfinal>=7){
+           JOptionPane.showMessageDialog(null,"Por lo tanto Su Estado es: APROBADO ");
+           
+       }
+       else {
+           JOptionPane.showMessageDialog(null,"Por lo tanto Su Estado es: REPROBADO ");
+           
+       }
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suma de dos numeros
+
+package sumadedosnumeros;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class SumadeDosNumeros {
+
+    
+    public static void main(String[] args) {
+        String num1;
+        String num2;
+        int valor1; 
+        int valor2;
+        int suma;
+        
+        JOptionPane.showMessageDialog(null,"Bienvenidos");
+        
+        num1 = JOptionPane.showInputDialog("Escriba el primer numero");
+        valor1=Integer.parseInt(num1);
+        num2 = JOptionPane.showInputDialog("Escriba el segundo numero");
+        valor2=Integer.parseInt(num2);
+        
+        suma=valor1+valor2;
+        
+        JOptionPane.showMessageDialog(null, "la suma de los numeros es : " + suma );
+
+        System.exit(0);
+    }
+    
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mostrar mi nombre.
+
+package minombre;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Fernando Franco
+ */
+public class MiNombre {
+
+    public static void main(String[] args) {
+         String estado;
+        
+        estado = JOptionPane.showInputDialog(null, "Escribe Tù nombre");
+        JOptionPane.showMessageDialog(null, "Bienvenido a este cuadro  " + estado);
+        
+        System.exit(0);
+    }
+    
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

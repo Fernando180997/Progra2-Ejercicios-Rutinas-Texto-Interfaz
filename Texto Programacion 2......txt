@@ -1,0 +1,492 @@
+Aprovado/Reprovado:
+
+package parciales.laboratorios;
+
+import java.util.Scanner;
+
+
+public class ParcialesLaboratorios {
+
+    
+    public static void main(String[] args) {
+       int n1; 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Introduce nota");
+        n1=sc.nextInt();
+        if(n1>=7){
+            System.out.println("APROBADO");
+        }else if (n1<7){
+           System.out.println("REPROBADO");
+       
+    }
+    
+}
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ciclo For
+
+package ValorInicialFinal;
+
+import java.util.*;
+public class Class ValorInicialFinal {
+
+    public static void main(String[] args) {
+        
+        Scanner dato=new Scanner(System.in);
+        
+        int e,s;
+        
+        System.out.println("Digite el valor incial");
+        e=dato.nextInt();
+        
+        System.out.println("Digite el valor final");
+        s=dato.nextInt();
+        
+        System.out.println("");
+        
+        for (int num=e;num<=s;num=num+2){
+            
+      
+               System.out.println(num); 
+            
+        
+        }
+        
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usuario:
+
+package Usuario;
+
+import java.util.Scanner;
+
+
+public class Usuario {
+
+   
+    public static void main(String[] args) {
+         String usuario="admin",respuesta="";
+         Scanner sc=new Scanner(System.in);
+        System.out.println("ingrese su usuario");
+          respuesta=sc.next();
+          if (respuesta.equals(usuario)){
+              System.out.println("Bienvenido");
+      } else{ 
+         System.out.println("el usuario es incorrecto");
+        
+            
+        }
+    }
+    
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mostrar Nombre en pantalla:
+
+package MiNopmbre;
+ import javax.swing.JOptionPane;
+
+public class MiNopmbre{
+
+   
+    public static void main(String[] args) {
+        
+        String estado;
+        
+        
+
+        
+        
+        estado = JOptionPane.showInputDialog(null, "Escriba su nombre");
+        JOptionPane.showMessageDialog(null, "Bienvenido a este cuadro  " + estado);
+        
+        System.exit(0);
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Zapateria:
+
+
+package Zapateria;
+
+import java.util.*;
+public class Zapateria{
+
+    
+    public static void main(String[] args) {
+        
+        Scanner dato=new Scanner(System.in);
+        
+        int compra; 
+        int total = 0;
+        
+        System.out.println("Bienvenidos a su zapateria ");
+        System.out.println("------------------------------");
+        System.out.println("Ingrese el monto de su compra ");
+        compra=dato.nextInt();
+        
+        System.out.println("");
+        
+        if (compra>150){
+            
+            total= (int) (compra-(compra*0.20));
+            
+            System.out.println("Aplica a un descuento del 20 %");
+            System.out.println("");
+            System.out.println("El total de su compra es : " +total);
+            
+        }
+        else{
+            System.out.println("No aplica a un descuento");
+            System.out.println("Su compra es de  " + compra);
+        }
+        
+      
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Horas Trabajadas:
+
+package ;
+
+import java.util.*;
+
+public class NewClass {
+    
+    public static void main(String[] args){
+        
+        Scanner dato=new Scanner(System.in);
+        int horas = 0, extra, samensual;
+        
+        System.out.println("Bienvenido" );
+        System.out.println("Ingrese la cantidad de horas trabajadas");
+        horas=dato.nextInt();
+        
+        
+        if (horas>40){
+            extra=horas-40;
+            samensual=extra*15+(40*10);  
+        }
+        else{
+            samensual=horas*10;
+            
+        }
+        
+        System.out.println("El salario mensual es de : " + samensual);
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package class Iterando;
+
+/**
+ *
+ * @author CC3B
+ */
+public class Class Iterando{
+
+  
+    
+    public static void main(String[] args) {
+        int var=1;
+        
+        while (var<=100 ){
+            System.out.println("Iterando :" + var + " veces");
+            var++;
+        }
+    }
+    
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Notas
+package notas;
+
+import java.util.*;
+public class Notas {
+
+    
+    public static void main(String[] args) {
+   
+       Scanner dato=new Scanner(System.in);
+       
+       double l1,p1,l2,p2,l3,p3, prom1,prom2,prom3,promfinal;
+       
+       System.out.println("Bienvenidos al ingreso de notas");
+       System.out.println("--------------------");
+       System.out.println("Digite el 1er laboratorio");
+       l1=dato.nextDouble();
+       while (l1<0 || l1>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 1er laboratorio");
+       l1=dato.nextDouble();
+       }
+       
+       System.out.println("Digite el 1er parcial");
+       p1=dato.nextDouble();
+       while (p1<0 || p1>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 1er parcial");
+       p1=dato.nextDouble();
+       }
+       
+       System.out.println("Digite el 2do laboratorio");
+       l2=dato.nextDouble();
+       while (l2<0 || l2>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 2do laboratotio");
+       l2=dato.nextDouble();
+       }
+       
+       System.out.println("Digite el 2do parcial");
+       p2=dato.nextDouble();
+       while (p2<0 || p2>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 2do parcial");
+       p2=dato.nextDouble();
+       }
+       
+       System.out.println("Digite el 3er laboratorio");
+       l3=dato.nextDouble();
+       while (l3<0 || l3>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 3er laboratorio");
+       l3=dato.nextDouble();
+       }
+       
+       System.out.println("Digite el 3er parcial");
+       p3=dato.nextDouble();
+       while (p3<0 || p3>10){
+           
+           System.out.println("La nota debe de estar entre 0-10");
+           System.out.println("--------------------------------");
+           System.out.println("Digite el 3er parcial");
+       p3=dato.nextDouble();
+       
+      
+      
+       }
+       
+       prom1=(l1*0.4)+(p1*0.6);
+       prom2=(l2*0.4)+(p2*0.6);
+       prom3=(l3*0.4)+(p3*0.6);
+         
+         promfinal=(prom1+prom2+prom3)/3;
+       
+       
+       System.out.println("El promedio de las notas es  " + promfinal);
+       
+       if (promfinal>=7){
+           System.out.print("Estado: ");
+           System.out.println("APROBADO");
+       }
+       else {
+           System.out.print("Estado: ");
+           System.out.println("REPROBADO");
+       }
+       
+       
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Suma Y resta
+
+package SumaResta;
+
+import java.util.*;
+
+
+
+public class SumaResta {
+
+    
+    public static void main(String[] args) {
+        
+        int n1,n2;
+        
+   Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Introduzca 1");
+        n1=sc.nextInt();
+     
+        System.out.println("Introduzca 2");
+        n2=sc.nextInt();
+        
+        System.out.println(" La suma de los valores ingresados es"+(n1+n2)+"\n La resta es"+(n1-n2));
+        
+       
+    
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+suma de dos numeros
+
+package suma;
+ import javax.swing.JOptionPane;
+
+public class suma{
+
+   
+    public static void main(String[] args) {
+        
+        String num1;
+        String num2;
+        String nombre;
+        String codigo;
+        int valor1; 
+        int valor2;
+        int sumat;
+        
+        JOptionPane.showMessageDialog(null,"Bienvenidos");
+        
+        num1 = JOptionPane.showInputDialog("Escriba el primer numero");
+        valor1=Integer.parseInt(num1);
+        num2 = JOptionPane.showInputDialog("Escriba el segundo numero");
+        valor2=Integer.parseInt(num2);
+        
+        sumat=valor1+valor2;
+        
+        JOptionPane.showMessageDialog(null, "la suma de los numeros es : " + sumat );
+
+        System.exit(0);
+    }
+    
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+tablas de multiplicar
+
+package class Tablas;
+
+import java.util.*;
+public class Class Tablas{
+
+  
+    
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+        
+        int e;
+        int s;
+   
+        System.out.println("Ingrese el numero de inicio de la tabla ");
+      //n=integer.paserInt(entrada.next());
+        e=entrada.nextInt();
+        
+        System.out.println("Ingrese el numero de salida de la tabla");
+      //n=integer.paserInt(entrada.next());
+        s=entrada.nextInt();
+        
+        int resultado;
+    
+       
+       while (e<=s){
+           int f=1;
+           while (f<=10){
+               
+               resultado=e*f;
+               
+               System.out.println(e+ "x" +f+ "=" +resultado );
+               
+               f++;
+               
+           }
+           e++;
+           System.out.println("");
+       }
+      
+      
+   
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package class ValorInicialFinal;
+
+import java.util.*;
+public class Class ValorInicialFinal; {
+
+  
+    
+    public static void main(String[] args) {
+        Scanner reader=new Scanner(System.in);
+        
+        int contador;
+        int fin;
+        System.out.println("Ingrese el valor incial");
+        contador=reader.nextInt();
+        System.out.println("Ingrese el valor final");
+        fin=reader.nextInt();
+        
+        
+        
+        while(contador<=fin){
+              System.out.println("");
+            System.out.println("Valor actual = " + contador);
+            contador++;
+            
+          
+            
+            if (contador<=7){
+                System.out.println("Aprobado");
+            }
+            else {
+                System.out.println("Reprobado");
+            }
+            
+        }
+        
+   
+    }
+    
+}
+
+
