@@ -1,1 +1,0 @@
-# Progra2-Ejercicios-Rutinas-Texto-Interfaz
